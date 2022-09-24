@@ -1,0 +1,28 @@
+.user-component,
+.user-component:first-child {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.user-component__profile {
+  width: 75px;
+  height: 75px;
+  border-radius: 37%;
+}
+
+.user-component__text {
+  margin: 10px 15px;
+}
+
+.user-component__title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.user-component__subtitle {
+  margin-top:  15px;
+  font-size: 17px;
+  opacity: 0.7;
+  
+}

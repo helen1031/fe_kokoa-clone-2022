@@ -1,0 +1,11 @@
+#friends-name-link {
+  display: block;
+  padding: 15px 0px;
+  text-align: center;
+  background-color:#FAFAFA;
+  font-size: 17px;
+}
+
+#friends-name-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
