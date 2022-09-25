@@ -1,18 +1,35 @@
+.user-component {
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .user-component,
-.user-component:first-child {
+.user-component__column:first-child {
   display: flex;
   align-items: center;
-  padding: 15px;
 }
 
 .user-component__profile {
+  width: 65px;
+  height: 65px;
+  border-radius: 37%;
+}
+
+.user-component__profile-lg {
   width: 75px;
   height: 75px;
   border-radius: 37%;
 }
 
+.user-component__profile-sm {
+  width: 55px;
+  height: 55px;
+  border-radius: 37%;
+}
+
 .user-component__text {
-  margin: 10px 15px;
+  margin: 0px 15px;
 }
 
 .user-component__title {
@@ -20,9 +37,17 @@
   font-weight: 500;
 }
 
+.user-component__title__notbold {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .user-component__subtitle {
-  margin-top:  15px;
+  margin-top:10px;
   font-size: 17px;
   opacity: 0.7;
-  
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.3);
 }
