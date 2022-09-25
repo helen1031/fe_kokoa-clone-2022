@@ -5,15 +5,14 @@
   padding-top: 40px;
   padding-left: var(--horizontal-space);
   padding-right: var(--horizontal-space);
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .screen-header__title {
   font-size: 35px;
   font-weight: 500;
-  width: 70%;
 }
 
-.screen-header__icon span {
+.screen-header__icons span {
   margin-left: 25px;
 }

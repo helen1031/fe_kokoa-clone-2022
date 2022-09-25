@@ -20,16 +20,6 @@
 }
 
 .nav__noti {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: tomato;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  color: white;
-  font-weight: 500;
-  font-size: 13px;
   position: absolute;
   left: 15px;
   bottom: 15px;

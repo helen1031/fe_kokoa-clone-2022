@@ -27,13 +27,15 @@
 
     <header class="screen-header">
       <h1 class="screen-header__title">Chats</h1>
-      <span screen-header__icons><i class="fas fa-search fa"></i></span>
-      <span></span>
-      <span><i class="fas fa-music fa-lg"></i></span>
-      <span><i class="fas fa-cog fa-lg"></i></span>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-comment-medical fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
     </header>
 
-    <main class="chat-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img src="img/profile.JPG" class="user-component__profile-lg" />
@@ -42,7 +44,10 @@
             <h6 class="user-component__subtitle"></h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:33</span>
+          <div class="badge">999</div>
+        </div>
       </div>
       <div class="user-component">
         <div class="user-component__column">
@@ -59,13 +64,13 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chat.html">
-            <span class="nav__noti">999</span>
-            <i class="far fa-comment fa-2x"></i>
+            <span class="nav__noti badge">999</span>
+            <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
