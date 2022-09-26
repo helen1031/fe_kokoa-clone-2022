@@ -10,3 +10,11 @@
   font-weight: 500;
   font-size: 13px;
 }
+
+.dot {
+  display: flex;
+  background-color: tomato;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
