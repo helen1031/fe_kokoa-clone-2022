@@ -38,3 +38,30 @@
   font-size: 20px;
   color: var(--gray);
 }
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray);
+  margin-bottom:  15px;
+}
+
+.open-post__post {
+  display: flex;
+}
+
+.open-post__post img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.open-post__post .divider {
+  width: 1px;
+  height: 15px;
+  background-color: var(--gray);
+}
+
+.open-post__member-status {
+  color: #FF6BC5;
+}
