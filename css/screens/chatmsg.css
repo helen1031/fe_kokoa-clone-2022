@@ -87,3 +87,59 @@
 .message-row__own .message-content__info {
   flex-direction: row-reverse;
 }
+
+.reply {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  width: 8%;
+  color: var(--gray);
+}
+
+.reply .reply__column:last-child {
+  width: 92%;
+  position: relative;
+}
+
+.reply__column input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: var(--main-border);
+  border-radius: 15px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right:3px;
+  top: 2px;
+}
+
+.reply__column:last-child > i {
+  right : 45px;
+  top: 9px;
+  color: var(--gray)
+}
+
+.reply__column:last-child button {
+  border: none;
+  background-color: var(--yellow);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
