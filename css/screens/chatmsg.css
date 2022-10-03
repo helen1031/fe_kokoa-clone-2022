@@ -1,6 +1,6 @@
 #chat-msg-screen {
   background-color: #ABC0D1;
-  height:1100vh;
+  height:100vh;
 }
 
 #chat-msg-screen .status-bar{
@@ -15,11 +15,23 @@
   background-color: #ABC0D1;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-chat-msg {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -30,9 +42,39 @@
   border-radius: 15px;
   margin-bottom: 25px;
 }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row {
   display: flex;
   width: 100%;
+  animation: fadeInRight 0.8s ease-in-out;
+}
+
+.message-row__own {
+  opacity: 0;
+  animation: fadeInLeft 0.8s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
 .message-row img {
@@ -98,6 +140,7 @@
   padding: 5px 20px;
   box-sizing: border-box;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -110,12 +153,35 @@
   position: relative;
 }
 
-.reply__column input {
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply  .reply__column:first-child,
+.reply .fa-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within  .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-10%) translateY(-50px);
+}
+
+.reply input {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
   border: var(--main-border);
   border-radius: 15px;
+  transition: all .3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -139,7 +205,6 @@
   border-radius: 50%;
 }
 
-.reply__column button:focus,
-.reply__column button:active {
-  outline: none;
+.reply:focus-within {
+  transform: translateY(50px);
 }

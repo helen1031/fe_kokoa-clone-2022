@@ -21,3 +21,16 @@
 .screen-header__dot {
   position: absolute;
 }
+
+@keyframes cogRotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: cogRotate 1s linear infinite;
+}
